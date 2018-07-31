@@ -3,10 +3,11 @@ class UsersController < ApplicationController
   end
 
   def create
-  	@user = User.create
+  	@user = User.new
   	@user.username = params[:username]
   	@user.email = params[:email]
   	@user.bio = params[:bio]
-
+  	puts "je suis le controller"
+  	puts "affiche #{@user}"
   end
 end
