@@ -1,24 +1,21 @@
-# README
+# README du projet I LOVE FORMS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projet réalisé par Sandrine et Romain
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.1
 
-* System dependencies
+Voici le lien Heroku :
 
-* Configuration
+- https://i-love-forms-rennes.herokuapp.com/
 
-* Database creation
 
-* Database initialization
+Comment l'installer et le tester:
+  soit en allant sur le lien Heroku
+  soit : Download or clone the repository $ git clone https://github.com/Ertemelle/i-love-forms
+Run the command bundle install to install the necessary gems $ bundle install
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Enjoy :)
 
-* Deployment instructions
-
-* ...
+Made with love from Rennes
