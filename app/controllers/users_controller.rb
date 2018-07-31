@@ -7,9 +7,14 @@ class UsersController < ApplicationController
   	@user = User.create(username: params[:username], email: params[:email], bio: params[:bio])
   	if @user.save
       redirect_to action: 'show', id: @user.username
-      else render '/users/error'
+    else render '/users/error'
     end
+
    	puts "je suis le controller"
   	puts @user.username
+  end
+
+  def show
+    @user = User.find_by(username: params[:id])
   end
 end
