@@ -1,13 +1,35 @@
 <h1>Salutations !<3</h1>
 <p>Enregistre toi ici (plz) :</p>
 
+
+
+<!--
 <form action="/create" method="post">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-	Name : 
+	Name :
 	<input type="text" name="username"><br><br>
 	Email :
 	<input type="text" name="email"><br><br>
-	Bio : 
+	Bio :
 	<input type="text" name="bio">
 	<input type="submit" value="Submit">
 </form>
+-->
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+
+<%= label_tag 'Name' %>
+<%= text_field_tag 'username' %>
+<br /> <br />
+
+<%= label_tag 'Email' %>
+<%= text_field_tag 'email' %>
+<br /> <br />
+
+<%= label_tag 'Bio' %>
+<%= text_field_tag 'bio' %>
+<br /> <br />
+
+<%= submit_tag "Submit" %>
+
+<% end %>
