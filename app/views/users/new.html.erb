@@ -1,9 +1,9 @@
-<h1>Salutations !<3</h1>
+<h1> Salutations ! </h1>
 <p>Enregistre toi ici (plz) :</p>
 
 
 
-<!--
+<!-- 1ER FORMULAIRE 
 <form action="/create" method="post">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	Name :
@@ -16,6 +16,8 @@
 </form>
 -->
 
+
+<!-- 2EME FORMULAIRE
 <%= form_tag url_for(action: 'create'), method: "post" do %>
 
 <%= label_tag 'Name' %>
@@ -32,4 +34,11 @@
 
 <%= submit_tag "Submit" %>
 
+<% end %> -->
+
+<%= form_for @user, url: {action: 'create'} do |f| %>
+name : <%= f.text_field :username %><br/>
+email : <%= f.text_field :email %><br/>
+bio : <%= f.text_field :bio %><br/>
+<%= f.submit %>
 <% end %>

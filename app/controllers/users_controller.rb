@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   def new
-    puts "je suis le controller"
+    @user = User.new
   end
 
   def create
-  	@user = User.create(username: params[:username], email: params[:email], bio: params[:bio])
+  	@user = User.create(username: params[:user][:username], email: params[:user][:email], bio: params[:user][:bio])
   	if @user.save
       redirect_to action: 'show', id: @user.username
     else render '/users/error'
