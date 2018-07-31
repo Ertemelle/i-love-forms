@@ -1,9 +1,9 @@
 <h1> Salutations ! </h1>
-<p>Enregistre toi ici (plz) :</p>
+<p >Enregistre toi ici (plz) :</p>
 
 
 
-<!-- 1ER FORMULAIRE 
+<!-- 1ER FORMULAIRE
 <form action="/create" method="post">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	Name :
@@ -37,8 +37,8 @@
 <% end %> -->
 
 <%= form_for @user, url: {action: 'create'} do |f| %>
-name : <%= f.text_field :username %><br/>
-email : <%= f.text_field :email %><br/>
-bio : <%= f.text_field :bio %><br/>
+name : <%= f.text_field :username, placeholder: 'User Name' %><br/>
+email : <%= f.text_field :email, placeholder: 'exemple@mail.com' %><br/>
+bio : <%= f.text_area :bio, size: "30x10", placeholder: 'j aime les licornes' %><br/>
 <%= f.submit %>
 <% end %>
