@@ -7,7 +7,7 @@ Projet réalisé par Sandrine et Romain
 
 Voici le lien Heroku :
 
-- https://i-love-forms-rennes.herokuapp.com/
+- https://i-lover-forms-rennes.herokuapp.com/
 
 
 Comment l'installer et le tester:
